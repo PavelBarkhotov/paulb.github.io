@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скоро</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<header>    
+    <a href="https://ya.ru/">Главная</a>
+</header>
+<body>
+    <h3>Возможно <a href="#">тут</a> что-то есть</h3>
+    <h1>
+        <div id="current_date_time_block"></div>
+
+<script type="text/javascript">
+    
+    /* функция добавления ведущих нулей */
+    /* (если число меньше десяти, перед числом добавляем ноль) */
+    function zero_first_format(value)
+    {
+        if (value < 10)
+        {
+            value='0'+value;
+        }
+        return value;
+    }
+
+    /* функция получения текущей даты и времени */
+    function date_time()
+    {
+        var current_datetime = new Date();
+        var day = zero_first_format(current_datetime.getDate());
+        var month = zero_first_format(current_datetime.getMonth()+1);
+        var year = current_datetime.getFullYear();
+
+        return day+"."+month+"."+year;
+    }
+
+    /* выводим текущую дату и время на сайт в блок с id "current_date_time_block" */
+    document.getElementById('current_date_time_block').innerHTML = date_time();
+</script>
+    </h1>
+</body>
+<footer>
+    <p>© 2023 dexdmxn</p>
+    <a href="https://vk.com/dexdmxn"><img alt="vk logo" src="https://ico.cppng.com/download/2107/vkontakte_PNG25.png"></a>
+</footer>
+</html>
