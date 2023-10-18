@@ -10,7 +10,7 @@
 </header>
 <body>
     <h3>Возможно тут что-то есть</h3>
-    <h1><?php date('l, F jS, Y'); ?></h1>
+    <h1><?php echo date('l, F jS, Y'); ?></h1>
 </body>
 <footer>
     <p>© 2023 dexdmxn</p>
