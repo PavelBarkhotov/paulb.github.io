@@ -96,3 +96,63 @@ img {
 .right_side_about h2{
     margin: 15px;
 }
+
+.right_side_about_mini{
+    --column-width: 350px;
+    --column-flex: 350;
+    background-color: #d3ff25;
+    color: #2d277e;
+    padding: 45px;
+    margin-left: 75px;
+    margin-top: 30px;
+    height: 250px;
+    transition: transform 0.3s ease;
+}
+
+.right_side_about_mini img{
+    width:150px; /* you can use % */
+    height: auto;
+    margin: auto;    
+}
+
+.right_side_about_mini h2{
+    width: 375px;
+}
+
+.right_side_about_mini:hover{
+    text-transform: uppercase;
+    transform: scale(1.25);
+    text-align: center;
+    border-radius: 15px;    
+    border: 3px solid #483eca;
+}
+
+:root{
+    --colour1: #d3ff25; --colour2: #2d277e; --speed: 4s;
+}
+
+.container{
+    height: 100%; display: flex;
+    justify-content: center; align-items: center;
+}
+
+.container .bar{
+    min-height: 100px; border-radius: 10px;
+    width: calc(113px*16.2);
+    box-shadow: 0px 10px 13px -6px #2c3e50;
+    background-color: var(--colour2);
+    background-image: repeating-linear-gradient(
+        45deg, transparent, transparent 40px,
+        var(--colour1) 40px, var(--colour1) 80px );
+    animation: slide var(--speed) linear infinite;
+    will-change: background-position;
+}
+
+@keyframes slide {
+    from {
+        background-position: 0;
+    }to {
+        background-position: 113px;
+    }
+}
+
