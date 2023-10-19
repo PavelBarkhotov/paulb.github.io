@@ -44,7 +44,7 @@ img {
     width: 30px;
 }
 
-.columns_about{
+columns_about{
     column-gap: var(--margin);
     display: flex;
     margin: 0 auto;
@@ -55,7 +55,7 @@ img {
     
 }
 
-.left_side_about{
+left_side_about{
     width: 100%;
     height: 100%;
     --column-width: 393px;
@@ -68,7 +68,7 @@ img {
     margin-top: 30px;
     writing-mode: vertical-rl;
 }
-.left_side_about h1{
+left_side_about h1{
     padding: 15px;
     margin: 15px; 
     font-size: 100px;
@@ -78,14 +78,14 @@ img {
     height: 1000px;
 }
 
-.left_side_about h1:hover{
+left_side_about h1:hover{
     background-color: #2d277e;
     color: #d2fe23;
     transform: scale(0.8);
     text-align: center;
 }
 
-.right_side_about{
+right_side_about{
     width: 100%;
     height: 100%;
     --column-width: 587px;
@@ -93,6 +93,6 @@ img {
     text-align: left;
 }
 
-.right_side_about h2{
+right_side_about h2{
     margin: 15px;
 }
