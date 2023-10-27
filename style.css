@@ -124,6 +124,7 @@ img {
     border: 3px solid #483eca;
 }
 
+/*Стилизация warning bar*/
 :root{
     --colour1: #d3ff25; --colour2: #2d277e; --speed: 4s;
 }
@@ -152,4 +153,26 @@ img {
         background-position: 113px;
     }
 }
+/**/
 
+/*Projects page*/
+
+.logo {
+    background-color: #2d277e;
+    width: 110px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    background-color: #d2fe23;
+    transform: scale(1.1);
+    text-align: center;
+}
+
+.main_title {
+    font-size: 48px;
+    padding: 15px;
+    margin: 15px;
+}
+/**/
